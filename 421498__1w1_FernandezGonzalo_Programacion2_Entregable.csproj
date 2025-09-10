@@ -61,6 +61,10 @@
     <Compile Include="services\DetalleFacturaService.cs" />
     <Compile Include="services\FacturasService.cs" />
     <Compile Include="services\FormaPagoService.cs" />
+    <Compile Include="services\IArticuloService.cs" />
+    <Compile Include="services\IDetalleFacturaService.cs" />
+    <Compile Include="services\IFacturaService.cs" />
+    <Compile Include="services\IFormaPagoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />

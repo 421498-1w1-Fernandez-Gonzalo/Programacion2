@@ -1,5 +1,6 @@
 ﻿using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Data.Forma_pago_Repository;
 using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Domain;
+using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Services
 {
-    public class FormaPagoService
+    public class FormaPagoService : IFormaPagoService
     {
         private readonly IFormaPagoRepository _formaPagoRepository;
         public FormaPagoService(IFormaPagoRepository formaPagoRepository)
@@ -31,7 +32,7 @@ namespace _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Services
         {
             _formaPagoRepository.Update(formaPago);
         }
-        public void DeleteById(int id)
+        public void Delete(int id)
         {
             _formaPagoRepository.Delete(id);
         }

@@ -1,5 +1,6 @@
 ﻿using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Data.Factura_Repository;
 using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Domain;
+using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Services
 {
-    public class FacturasService
+    public class FacturasService : IFacturaService
     {
         private readonly IFacturaRepository _facturaRepository;
         public FacturasService(IFacturaRepository facturaRepository)
@@ -31,7 +32,7 @@ namespace _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Services
         {
             _facturaRepository.Update(factura);
         }
-        public void DeleteById(int id)
+        public void Delete(int id)
         {
             _facturaRepository.Delete(id);
         }

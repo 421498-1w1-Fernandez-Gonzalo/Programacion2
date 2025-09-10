@@ -1,5 +1,6 @@
 ﻿using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Data.Articulos_Repository;
 using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Domain;
+using _421498__1w1_FernandezGonzalo_Programacion2_Entregable.services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Services
 {
-    public class ArticuloService
+    public class ArticuloService : IArticuloService
     {
         private readonly IArticulosRepository _articulosRepository;
         public ArticuloService(IArticulosRepository articulosRepository)
