@@ -99,14 +99,7 @@ namespace _421498__1w1_FernandezGonzalo_Programacion2_Entregable.Data.Factura_Re
                     }
                     else
                     {
-                        cmd = new SqlCommand("sp_actualizar_factura", uow.Connection, uow.Transaction);
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@id_factura", factura.Codigo);
-                        cmd.Parameters.AddWithValue("@id_forma_pago", factura.Forma_pago.Codigo);
-                        cmd.Parameters.AddWithValue("@fecha", factura.Fecha);
-                        cmd.Parameters.AddWithValue("@cliente", factura.Cliente);
-                        cmd.Parameters.AddWithValue("@activo", factura.Activo);
-                        cmd.ExecuteNonQuery();
+                        return false;
                     }
                     foreach (var detalle in factura.Detalles)
                     {
