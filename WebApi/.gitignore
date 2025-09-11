@@ -1,0 +1,39 @@
+﻿# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.vscode/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# ASP.NET
+appsettings.*.json
+launchSettings.json
+
+# Others
+*.log
+*.cache
+*.db
+*.bak
+*.swp
