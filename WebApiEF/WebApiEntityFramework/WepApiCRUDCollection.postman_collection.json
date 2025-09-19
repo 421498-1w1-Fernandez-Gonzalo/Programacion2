@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "2ec63264-1833-4119-a961-429bd46ba456",
+		"name": "WepApiCRUDCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32870463"
+	},
+	"item": [
+		{
+			"name": "GetAll Factura",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Factura",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Put Update Factura",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Post ADD Factura",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
